@@ -24,16 +24,16 @@ namespace Total_Calculator
 
         private void funLogin()
         {
-            string sUname = "batman";
-            string sPwd = "alpine";
+            string sUname = "batman"; //username
+            string sPwd = "brucewayne"; //password
             string Uname = txtUname.Text.ToString();
             string UPwd = txtPwd.Text.ToString();
 
             if((string.Compare(Uname, sUname) == 0)&&(string.Compare(UPwd, sPwd) == 0))
             {
-                this.Hide();
+                this.Hide(); //hide login form
                 frmMenu frmHmenu = new frmMenu();
-                frmHmenu.Show();
+                frmHmenu.Show(); //show frmMenu
             }
         }
 
