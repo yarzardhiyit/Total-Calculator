@@ -26,9 +26,9 @@ namespace Total_Calculator
             * convert string to double using double.Parse function
             * txtRadius - textbox radius,.Text.Tostring() - user input as string
             */
-
+            const double PI = 3.14159; //const <data_type> <constant_name> = value;
             dRadius = double.Parse(sRadius); //string to double
-            dArea = 3.14 * dRadius * dRadius; //PI * r * r
+            dArea = PI * dRadius * dRadius; //PI * r * r
             txtArea.Text = dArea.ToString(); //double to string
         }
 
